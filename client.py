@@ -24,5 +24,6 @@ while True:
 
     print(response)
 
-    my_message = input("> ").encode('utf-8') + b'\n'
+    my_message = input("> ") + "\n"
+    my_message = my_message.encode('utf-8')
     client_socket.sendall(my_message)
